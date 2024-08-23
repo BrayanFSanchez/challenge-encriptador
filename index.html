@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto de encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="logo">
+            <img src="assets/Logo.svg" alt="Logo de Alura">
+        </div>
+        
+        <div>
+            <textarea class="input" name="input-entrada" id="input-entrada" rows="6" cols="50" placeholder="Ingrese el texto acá"></textarea>
+
+            <div class="contenedor-encriptador">
+                <div class="advertencia-contenedor">
+                    <img src="/assets/warning.svg" alt="warning icon">
+                    <p class="advertencia-texto">Solo letras minisculas y sin acentos</p>
+                </div>
+                <div class="botones-contenedor">
+                    <button id="encriptar" class="boton-encriptar" type="submit">Encriptar</button>
+                    <button id="desencriptar" class="boton-desencriptar" type="submit">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="rectangle">
+            <img id="muneco" class="muneco" src="/assets/Muñeco.png" alt="Muñeco">
+            <h2 id="sin-mensaje" class="sin-mensaje">Ningún mensaje fue encontrado</h2>
+            <p id="resultado" class="insertar-mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="copiar" class="boton-copiar" type="button">Copiar</button>
+        </div>
+
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
